@@ -1,5 +1,12 @@
 // pygments-css (https://github.com/richleland/pygments-css)
-
+.highlight{
+  background-color: #2d2c36;
+  border-radius: 8px;
+  padding: 1px 20px;
+  color: #cfcfcf }
+.lineno {
+  color: #bfbfbf;
+}
 .hll { background-color: #ffffcc }
 .c { color: #999988; font-style: italic } /* Comment */
 .err { color: #a61717; background-color: #e3d2d2 } /* Error */
