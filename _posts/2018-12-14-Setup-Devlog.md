@@ -114,7 +114,7 @@ theme_settings:
 내가 Jeykyll을 사용한 이유는 코드를 이쁘게(?) 올리기 위한 것인데, 이 때 필요한 것이 Hightlight 기능이다.  
 2-3에서 미리 rouge를 설치했기 때문에 설치는 패스하고 적용 과정으로 넘어가겠다.  
 나는 sublime 스타일을 적용했다.
-```
+``` terminal
 ~$ rougify styly monokai.sublime >
 assets/css/syntax.css
 ```
