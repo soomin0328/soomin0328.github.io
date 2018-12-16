@@ -1,6 +1,12 @@
 // pygments-css (https://github.com/richleland/pygments-css)
+p code {
+  color: #d68100;
+  background-color: #222;
+  padding: 2px 7px;
+  border-radius: 5px;
+}
 .highlight{
-  background-color: #2d2c36;
+  background-color: #151421;
   border-radius: 8px;
   padding: 1px 20px;
   margin: 40px 0px;
