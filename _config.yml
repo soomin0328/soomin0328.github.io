@@ -1,83 +1,57 @@
-# SITE CONFIGURATION
-baseurl: ""
-url: "https://soomin0328.github.io/"
-abouturl: "https://soomin0328.github.io/My-Homepage/"
+# Site settings
+title: SOOM's Devlog
+url: "https://soomin0328.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+#timezone: Asia/Chongqing
+description: My devlopment blog.
 
-# THEME-SPECIFIC CONFIGURATION
-theme_settings:
-  # Meta
-  title: Soom's Devlog
-  favicon: assets/favicon.ico
-  gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+# Your information
+email: ssminkk0328@gmail.com
+author: KIM SOOMIN
+avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRgZs5qvnB_jm_njzqgjC3KPmphfCJ5MBwNZ363FvRP4ZlqrnhEA"
+profile: "&#128337;&#128339;"
+#twitter_username: twitter_username
+#github_username:  github_username
+profile_links:
+  Email: "mailto:ssminkk0328@gmail.com"
+  GitHub: "https://github.com/soomin0328"
+  Instagram: "https://www.instagram.com/ganadar._.a"
+  # You can add more profile links above, or edit _includes/sidebar.html 
 
-  # Header and footer text
-  header_text: >
-     <p>All posts to study.</p>
-  header_text_feature_image:
-  footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+# Comment Service
+disqus_shortname: "sooms-devlog"
 
-  # Icons
-  rss: false
-  email_address: "ssminkk0328@gmail.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  gitlab:
-  github: "soomin0328"
-  google_plus:
-  instagram: "ganadar._.a"
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter:
-  wordpress:
-  youtube:
+excerpt_separator: <!--more-->
 
-  # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname: "sooms-devlog"
-  katex: true # Enable if using math markup
-  search: true # Enable the search feature
+header:
+  links:             # Links on the header. Link to in-site page with a slash as prefix
+    About: /about/
+    Category: /category/
+    Homepage: "https://soomin0328.github.io/My-Homepage/"
 
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next_post: "Next post"
-  str_previous_post: "Previous post"
-  str_next_page: "Next"
-  str_previous_page: "Prev"
-  str_continue_reading: "Continue reading"
-  str_javascript_required_disqus: "Please enable JavaScript to view comments."
-  str_search_no_results: "No results found."
+permalink: /archivers/:title
+plugins:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
 
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: true
-
-# PAGINATION
+# Build settings
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "page:num"
 
-# BUILD SETTINGS
-markdown: kramdown
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
-plugins: [jekyll-paginate]
-theme: jekyll-theme-type
-exclude:
-  - Gemfile
-  - Gemfile.lock
+markdown: kramdown
+
+# https://jekyllrb.com/docs/configuration/#precedence
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax

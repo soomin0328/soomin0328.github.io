@@ -1,9 +1,8 @@
-{% if site.theme_settings.katex and page.id %}
-<script src="{{ "/assets/js/katex_init.js" | relative_url }}"></script>
-{% endif %}
-
-{% if site.theme_settings.footer_text %}
-<footer class="site-footer">
-	<p class="text">{{ site.theme_settings.footer_text }}</p>
+<footer class="footer">
+<div class="wrapper">
+&copy; {{ site.time | date: '%Y' }} {{ site.author }} &#128150;
+</div>
 </footer>
-{% endif %}
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});</script>
+<script src="{{ "/js/easybook.js" | prepend: site.baseurl }}"></script>
