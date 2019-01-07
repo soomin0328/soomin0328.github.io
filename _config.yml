@@ -2,7 +2,7 @@
 title: SOOM's Devlog
 url: "https://soomin0328.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
-#timezone: Asia/Chongqing
+#timezone: Asia/Seoul
 description: My devlopment blog.
 
 # Your information
@@ -10,11 +10,9 @@ email: ssminkk0328@gmail.com
 author: KIM SOOMIN
 avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRgZs5qvnB_jm_njzqgjC3KPmphfCJ5MBwNZ363FvRP4ZlqrnhEA"
 profile: "&#128337;&#128339;"
-#twitter_username: twitter_username
-#github_username:  github_username
+github_username: "soomin0328"
 profile_links:
   Email: "mailto:ssminkk0328@gmail.com"
-  GitHub: "https://github.com/soomin0328"
   Instagram: "https://www.instagram.com/ganadar._.a"
   # You can add more profile links above, or edit _includes/sidebar.html 
 
@@ -26,7 +24,9 @@ excerpt_separator: <!--more-->
 header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
     About: /about/
-    Category: /category/
+    Post: /
+    Algorithm: /algorithm/
+    Tag: /tag/
     Homepage: "https://soomin0328.github.io/My-Homepage/"
 
 permalink: /archivers/:title
@@ -55,3 +55,5 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   math_engine: mathjax
+
+future: BOOL
