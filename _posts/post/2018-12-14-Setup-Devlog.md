@@ -3,7 +3,8 @@ layout: post
 title: Devlog 만들기
 subtitle: Jekyll과 Gitpage를 연동하여 나만의 개 발로그 만들기.
 date:   2018-12-14 12:00
-categories: jekyll gitpage devlog
+tags: jekyll gitpage devlog
+categories: post
 permalink: /archivers/setup-devlog
 ---
 
