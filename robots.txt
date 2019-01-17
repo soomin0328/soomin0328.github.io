@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://soomin0328.github.io/sitemap.xml
