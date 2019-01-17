@@ -6,6 +6,9 @@ date:   2018-12-14 12:00
 tags: jekyll gitpage devlog
 categories: post
 permalink: /archivers/setup-devlog
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 
