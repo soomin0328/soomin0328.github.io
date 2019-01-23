@@ -5,7 +5,7 @@ layout: default
 <div class="home">
   <h1 class="page-heading">{{page.title}}</h1>
 
-  <ul class="post-list">
+  <!-- <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
         <h2>
@@ -24,7 +24,12 @@ layout: default
         </div>
       </li>
     {% endfor %}
-  </ul>
+  </ul> -->
+  {% for post in paginator.posts %}
+	<a href="{{ post.url | relative_url }}">
+      <strong>{{ post.title | escape }}</strong>
+	</a>
+{% endfor %}
   
 <!-- Pagination links -->
 <div class="pagination">
