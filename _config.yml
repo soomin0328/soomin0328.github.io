@@ -28,7 +28,6 @@ header:
     Tag: /tag/
     Homepage: "https://soomin0328.github.io/My-Homepage/"
 
-permalink: /archivers/:title
 plugins:
  - jekyll-paginate-v2
  - jekyll-gist
@@ -42,7 +41,8 @@ pagination:
   enabled: true
   per_page: 5
   sort_reverse: true
-  permalink: /:year/:month/:title.html
+
+permalink: /:year/:month/:title.html
 
 highlighter: rouge
 markdown: kramdown

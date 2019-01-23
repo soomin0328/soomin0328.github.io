@@ -5,7 +5,6 @@ subtitle: Jekyll과 Gitpage를 연동하여 나만의 개 발로그 만들기.
 date:   2018-12-14 12:00
 tags: jekyll gitpage devlog
 categories: post
-permalink: /archivers/setup-devlog
 sitemap :
   changefreq : daily
   priority : 1.0
