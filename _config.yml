@@ -29,18 +29,14 @@ header:
     Homepage: "https://soomin0328.github.io/My-Homepage/"
 
 plugins:
- - jekyll-paginate-v2
+ - jekyll-paginate
  - jekyll-gist
  - jemoji
  - jekyll-sitemap
 
 # Build settings
-# paginate: 5
-# paginate_path: "page:num"
-pagination:
-  enabled: true
-  per_page: 5
-  sort_reverse: true
+paginate: 4
+paginate_path: "/page:num"
 
 permalink: /:year/:month/:title.html
 

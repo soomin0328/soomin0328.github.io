@@ -1,15 +1,17 @@
 ---
 layout: default
+title: Algorithm
+permalink: /algorithm/
 ---
 
 <div class="home">
-  <h1 class="page-heading">{{page.title}}</h1>
+  <h1 class="page-heading">Algorithm</h1>
 
-  <!-- <ul class="post-list">
-    {% for post in paginator.posts %}
+  <ul class="post-list">
+    {% for post in site.categories.algorithm %}
       <li>
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         
         <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
@@ -19,28 +21,23 @@ layout: default
           {%   else %}{{ post.content | lstrip | split: "
 " | first }}{% endif %}
           <p>
-            <a class="post-link" href="{{ post.url | relative_url }}">Read More &raquo;</a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
           </p>
         </div>
       </li>
     {% endfor %}
-  </ul> -->
-  {% for post in paginator.posts %}
-	<a href="{{ post.url | relative_url }}">
-      <strong>{{ post.title | escape }}</strong>
-	</a>
-{% endfor %}
+  </ul>
   
-<!-- Pagination links -->
+  <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">PREV</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">PREV</a>
   {% else %}
     <span class="previous">PREV</span>
   {% endif %}
   <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">NEXT</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">NEXT</a>
   {% else %}
     <span class="next ">NEXT</span>
   {% endif %}
