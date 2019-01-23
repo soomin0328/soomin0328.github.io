@@ -46,7 +46,7 @@ sitemap :
 <http://127.0.0.1:4000/> <- 여기를 들어갔을 때
 
 
-![Screenshot](../img/defalut.PNG)
+![Screenshot](/img/defalut.PNG)
 
 이런 화면이 나오면 설치 성공!
 ### 3. Jekyll Theme
