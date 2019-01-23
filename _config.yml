@@ -30,14 +30,18 @@ header:
 
 permalink: /archivers/:title
 plugins:
- - jekyll-paginate
+ - jekyll-paginate-v2
  - jekyll-gist
  - jemoji
  - jekyll-sitemap
 
 # Build settings
-paginate: 5
-paginate_path: "page:num"
+# paginate: 5
+# paginate_path: "page:num"
+pagination:
+  enabled: true
+  per_page: 5
+  sort_reverse: true
 
 highlighter: rouge
 markdown: kramdown
